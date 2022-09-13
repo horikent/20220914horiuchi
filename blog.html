@@ -81,24 +81,26 @@
     <div class="contact__container">
       <h2 class="contact__ttl">お問い合わせ</h2>
       <p class="contact__sen">お仕事のご依頼や採用に関してはお問い合わせにて承っております。</p>
-      <div class="button">
-        <input type="button" id="openBtn" class="btn" value="お問い合わせ" >
-      </div>      
+      <div class="contact__button">
+        <input type="button" id="openBtn" value="お問い合わせ">
+      </div>
       <div id="modal" class="modal">
         <div class="modal__content">
           <div class="modal__content-inner">
-            <form action="" method="get" class="contact__form">
+            <form action="" method="get" class="contact__form" id="form">
+              <div class="form_ttl">
+                <h1>お問い合わせ</h1>
+              </div>
               <div class="contact__form">
-                <h2>お問い合わせ</h2>
                 <label class="label_left" for="company">会社名 </label><br>
                 <input type="text" name="company" id="company">
               </div>
               <div class="contact__form">
-                <label class="label_left" for="name">お名前 <span class="contact-red">*</span></label><br>
+                <label class="label_left" for="name">お名前 <span class="contact-red">*</span> </label><br>
                 <input type="text" name="name" id="name" required>
               </div>
               <div class="contact__form">
-                <label class="label_left" for="email">メールアドレス <span class="contact-red">*</span></label><br>
+                <label class="label_left" for="email">メールアドレス <span class="contact-red">*</span> </label><br>
                 <input type="text" name="email" id="email" required>
               </div>
               <div class="contact__form">
@@ -113,8 +115,7 @@
         </div>
       </div>
     </div>
-  </div>
-  <button class="scroll-top" id="button">↑</button>
+  </div>  <button class="scroll-top" id="button">↑</button>
   <script src="js/main.js"></script>
 </body>
 
