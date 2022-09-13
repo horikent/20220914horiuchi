@@ -584,10 +584,12 @@ line-height:300%;
   height:650px;
   text-align: center;
   padding: 50px 0;
+  padding-left:50px;
 }
 
 .contact__form{
-  line-height: 150%
+  line-height: 150%;
+  text-align:left;
 }
 
 input[type="text"] {
@@ -597,12 +599,13 @@ input[type="text"] {
 
 .form_ttl{
   font-size:30px;
-  padding:50px 0 70px ;
+  padding:50px 50px 70px 0;
 }
 
 .label_left{
   font-weight:bold;
   line-height: 300%;
+  text-align: left;
 }
 
 textarea {
@@ -619,7 +622,7 @@ textarea {
   font-weight: bold;
   padding: 12px ;
   border: none;
-  margin: 20px 12%;
+  margin: 20px 14% 20px 10%;
   width: 320px;
   cursor: pointer;
 }
