@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>株式会社TECH</title>
+
+  <header class="header">
+    <div class="header__container flex-item">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__ul flex-item">
+          <li><a href="index.html" class="header__nav-li">ホーム</a></li>
+          <li><a href="service.html" class="header__nav-li">事業内容</a></li>
+          <li><a href="blog.html" class="header__nav-li">社員ブログ</a></li>
+          <li><a href="company_detail.html" class="header__nav-li">会社概要</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span class="hamburger-menu__line--top"></span>
+        <span class="hamburger-menu__line--middle"></span>
+        <span class="hamburger-menu__line--bottom"></span>
+      </div>
+    </div>
+    <script src="js/header.js"></script>
+  </header>
+</head>
+
+<body>
+  <div class="firstview__small">
+    <img src="img/mv.png" alt="" class="small">
+    <div class="firstview__small-container">
+      <h1>社員ブログ</h1>
+    </div>
+  </div>
+
+  <div class="blog">
+    <div class="blog__container">
+          <a class="blog__item A" href="#">
+            <img src="img/blog.png" alt="" class="blog__img">
+            <p class="blog__date">2019/07/17</p>
+            <h2 class="blog__ttl">会社を創業した理由</h2>
+          </a>
+          <a class="blog__item B" href="#">
+            <img src="img/blog.png" alt="" class="blog__img">
+            <p class="blog__date">2019/11/11</p>
+            <h2 class="blog__ttl">ITエンジニアを育成する最強メソッド</h2>
+          </a>
+          <a class="blog__item C" href="#">
+            <img src="img/blog.png" alt="" class="blog__img">
+            <p class="blog__date">2020/08/01</p>
+            <h2 class="blog__ttl">コーチングによるモチベーション向上理論</h2>
+          </a>
+          <a class="blog__item D" href="#">
+            <img src="img/blog.png" alt="" class="blog__img">
+            <p class="blog__date">2020/09/10</p>
+            <h2 class="blog__ttl">プログラミング言語習得論</h2>
+          </a>
+          <a class="blog__item E" href="#">
+            <img src="img/blog.png" alt="" class="blog__img">
+            <p class="blog__date">2020/12/01</p>
+            <h2 class="blog__ttl">エンジニア採用における注意点</h2>
+          </a>
+          <a class="blog__item F" href="#">
+            <img src="img/blog.png" alt="" class="blog__img">
+            <p class="blog__date">2021/01/01</p>
+            <h2 class="blog__ttl">今年の抱負</h2>
+          </a>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="contact__container">
+      <h2 class="contact__ttl">お問い合わせ</h2>
+      <p class="contact__sen">お仕事のご依頼や採用に関してはお問い合わせにて承っております。</p>
+      <div class="button">
+        <input type="button" id="openBtn" class="btn" value="お問い合わせ" >
+      </div>      
+      <div id="modal" class="modal">
+        <div class="modal__content">
+          <div class="modal__content-inner">
+            <form action="" method="get" class="contact__form">
+              <div class="contact__form">
+                <h2>お問い合わせ</h2>
+                <label class="label_left" for="company">会社名 </label><br>
+                <input type="text" name="company" id="company">
+              </div>
+              <div class="contact__form">
+                <label class="label_left" for="name">お名前 <span class="contact-red">*</span></label><br>
+                <input type="text" name="name" id="name" required>
+              </div>
+              <div class="contact__form">
+                <label class="label_left" for="email">メールアドレス <span class="contact-red">*</span></label><br>
+                <input type="text" name="email" id="email" required>
+              </div>
+              <div class="contact__form">
+                <label class="label_left" for="contact__content">お問い合わせ内容 <span class="contact-red">*</span> </label><br>
+                <textarea name="textarea" id="contact__content" required></textarea>
+              </div>
+              <div class="form-example">
+                <input type="submit" class="contact__btn" id="closeBtn" value="お申し込み">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="scroll-top" id="button">↑</button>
+  <script src="js/main.js"></script>
+</body>
+
+<footer class="footer">
+  <div class="footer__container  flex-item">
+    <p>© 2020 TECH inc.</p>
+    <nav class="footer__nav">
+      <ul class="footer__ul flex-item">
+        <li><a href="index.html" class="footer__nav-li">ホーム</a></li>
+        <li><a href="service.html" class="footer__nav-li">事業内容</a></li>
+        <li><a href="blog.html" class="footer__nav-li">社員ブログ</a></li>
+        <li><a href="company_detail.html" class="footer__nav-li" id="footer__last">会社概要</a></li>
+      </ul>
+    </nav>
+  </div>
+  <script src="js/footer.js"></script>
+</footer>
+
+</html>
