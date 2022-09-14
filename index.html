@@ -44,7 +44,7 @@
 
 <body>
   <div class="firstview">
-    <img src="img/mv.png" alt="" class="firstview">
+    <img src="img/mv.png" alt="" class="firstview__img">
     <div class="firstview__container">
       <h1 class="firstview__ttl">最新のテクノロジーで社会課題を解決</h1>
       <p class="firstview__sen">Solving social issues with the latest technology</p>
@@ -130,7 +130,7 @@
       <div id="modal" class="modal">
         <div class="modal__content">
           <div class="modal__content-inner">
-            <form action="" method="get"  id="form">
+            <form action="" method="get" class="contact__form" id="form">
               <div class="form_ttl">
                 <h1>お問い合わせ</h1>
               </div>
@@ -150,7 +150,7 @@
                 <label class="label_left" for="contact__content">お問い合わせ内容 <span class="contact-red">*</span> </label><br>
                 <textarea name="textarea" id="contact__content" required></textarea>
               </div>
-              <div class="form-example">
+              <div class="form-btn">
                 <input type="submit" class="contact__btn" id="closeBtn" value="お申し込み">
               </div>
             </form>
@@ -163,10 +163,10 @@
   <script src="js/main.js"></script>
 </body>
 <footer class="footer">
-  <div class="footer__container  flex-item">
-    <p>© 2020 TECH inc.</p>
+  <div class="footer__container flex-item">
+    <p class="footer__copy">© 2020 TECH inc.</p>
     <nav class="footer__nav ">
-      <ul class="footer__ul flex-item">
+      <ul class="footer__ul">
         <li><a href="index.html" class="footer__nav-li">ホーム</a></li>
         <li><a href="service.html" class="footer__nav-li">事業内容</a></li>
         <li><a href="blog.html" class="footer__nav-li">社員ブログ</a></li>
