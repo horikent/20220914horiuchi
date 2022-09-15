@@ -489,7 +489,7 @@ td {
 }
 
 .blog__title{
-  width:50%;
+  width:100%;
   text-align: center;
   font-size: 28px;
   padding-bottom: 20px;
@@ -690,6 +690,55 @@ textarea {
 .contact-red{
   color:rgb(205, 0, 37);
 }
+
+.batsu {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .batsu::before,
+  .batsu::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 90vh;
+    width: 5px;
+    height: 30px;
+    background: #333;
+  }
+}
+
+@media (max-width: 768px) {
+  .batsu__container{
+    width:5%;
+    margin:0 50px 0 auto;
+    text-align: right;
+  }
+
+  .batsu::before,
+  .batsu::after {
+    content: "";
+    position: absolute;
+    width:100%;
+    top: 10px;
+    width: 5px;
+    height: 30px;
+    background: #333;
+  }
+}
+
+.batsu::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.batsu::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 /*--------------------- footer--------------------- */
 
 .footer{

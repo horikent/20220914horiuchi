@@ -13,6 +13,15 @@ window.addEventListener('click', (e) => {
   }
 });
 
+
+const close = document.getElementById('batsu');
+close.addEventListener('click', () => {
+  modal.style.display = 'none';
+})
+
+
+
+
 const form = document.getElementById("form")
 const button = document.getElementById("closeBtn")
 
