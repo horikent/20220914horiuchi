@@ -244,23 +244,27 @@ td {
 }
 .small {
   position: relative;
-  height: 200px;
+  height: 250px;
   width:100%;
   object-fit: cover;
 
 }
 
+.firstview__small{
+    vertical-align: middle;}
+
 .firstview__small-container{
   position: absolute;
-  top: 20%;
   color: white;
+  top:180px;
+  bottom:50%;
   font-size: 30px;
   width:100%;
   text-align: center;
-  margin:0 auto;
 }
 
-
+.firstview__small-ttl{
+}
 
 /*--------------------- spirit--------------------- */
 
@@ -377,10 +381,6 @@ td {
 }
 
 
-.service__table-th{
-  width:280px;
-  padding:25px;
-}
 
 .service__table-td{
   vertical-align: top;
@@ -394,14 +394,25 @@ td {
 }
 
 @media screen and (min-width: 768px) {
-  .service__table {
-  border-top: 1px solid black;
+  .service__table {  
+    border-top: 1px solid black;
+  }
+    .service__table-th {
+    width: 280px;
+    padding: 25px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .service__table-container{
+  margin-left: -1.5%
+  }  
   .service__table {
     width: 90%;
+  }
+  .service__table-th {
+    width: 280px;
+    padding: 5%;
   }
   #first-th{
     border-top: 1px solid black;
@@ -424,11 +435,13 @@ td {
 
 /*--------------------- blog--------------------- */
 
+
 .blog__container{
   width:86%;
   margin: 0 auto 3% 6%;
   text-align:center;
   background-size: cover;
+  padding-top:70px;
 }
 
 @media (max-width: 768px) {
